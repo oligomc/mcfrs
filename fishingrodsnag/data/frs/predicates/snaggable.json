@@ -1,0 +1,52 @@
+[
+    {
+      "condition": "minecraft:alternative",
+      "terms": [
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#frs:snaggable",
+            "equipment": {
+              "mainhand": {
+                "count": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "#frs:snaggable",
+            "equipment": {
+              "offhand": {
+                "count": {
+                  "min": 1
+                }
+              }
+            }
+          }
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "frs:head"
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "frs:chest"
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "frs:legs"
+        },
+        {
+          "condition": "minecraft:reference",
+          "name": "frs:feet"
+        }
+      ]
+    }
+  ]
+  

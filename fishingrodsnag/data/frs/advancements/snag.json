@@ -1,0 +1,122 @@
+{
+    "criteria": {
+      "lure1": {
+        "trigger": "minecraft:fishing_rod_hooked",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:fishing_rod"
+                    ],
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:lure",
+                        "levels": 1
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.1
+            }
+          ],
+          "entity": [
+            {
+              "condition": "minecraft:reference",
+              "name": "frs:snaggable"
+            }
+          ]
+        }
+      },
+      "lure2": {
+        "trigger": "minecraft:fishing_rod_hooked",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:fishing_rod"
+                    ],
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:lure",
+                        "levels": 2
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.2
+            }
+          ],
+          "entity": [
+            {
+              "condition": "minecraft:reference",
+              "name": "frs:snaggable"
+            }
+          ]
+        }
+      },
+      "lure3": {
+        "trigger": "minecraft:fishing_rod_hooked",
+        "conditions": {
+          "player": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "equipment": {
+                  "mainhand": {
+                    "items": [
+                      "minecraft:fishing_rod"
+                    ],
+                    "enchantments": [
+                      {
+                        "enchantment": "minecraft:lure",
+                        "levels": 3
+                      }
+                    ]
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:random_chance",
+              "chance": 0.3
+            }
+          ],
+          "entity": [
+            {
+              "condition": "minecraft:reference",
+              "name": "frs:snaggable"
+            }
+          ]
+        }
+      }
+    },
+    "requirements": [
+        [
+          "lure1",
+          "lure2",
+          "lure3"
+        ]
+    ],
+    "rewards": {
+      "function": "frs:snag/main"
+    }
+  }

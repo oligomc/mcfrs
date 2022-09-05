@@ -1,0 +1,17 @@
+{
+    "display": {
+        "title": "Fishing Rod Snagging",
+        "description": "Snag items from entities using fishing rods",
+        "icon": {
+            "item": "minecraft:fishing_rod"
+        },
+        "announce_to_chat": false,
+        "show_toast": false
+    },
+    "parent": "global:oligo",
+    "criteria": {
+        "trigger": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
