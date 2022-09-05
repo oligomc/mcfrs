@@ -1,4 +1,4 @@
-# Fishing Rod Snagging
+# Minecraft Fishing Rod Snagging (mcfrs)
 
 ## Description
 Fishing rods enchanted with Lure have a chance to snag armor or hand items from hooked entities. Higher levels of Lure have a greater chance of snagging items.
